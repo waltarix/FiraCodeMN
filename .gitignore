@@ -1,0 +1,8 @@
+/.peru/
+/src/assets/
+
+/build/
+
+/.vim/coc-settings.json
+
+__pycache__

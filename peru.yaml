@@ -1,0 +1,78 @@
+rule dummy_assets_dir:
+  pick: &assets_dir ./src/assets
+rule dummy_glyphs_dir:
+  pick: &glyphs_dir ./src/assets/glyphs
+
+imports:
+  # base fonts
+  firacode-regular: *assets_dir
+  firacode-bold: *assets_dir
+  migu-1m: *assets_dir
+  # glyphs
+  FontAwesome: *glyphs_dir
+  Pomicons: *glyphs_dir
+  PowerlineExtraSymbols: *glyphs_dir
+  PowerlineSymbols: *glyphs_dir
+  Unicode_IEC_symbol_font: *glyphs_dir
+  codicons: *glyphs_dir
+  devicons: *glyphs_dir
+  font-awesome-extension: *glyphs_dir
+  font-logos: *glyphs_dir
+  materialdesignicons-webfont: *glyphs_dir
+  octicons: *glyphs_dir
+  original-source: *glyphs_dir
+  weathericons-regular-webfont: *glyphs_dir
+
+curl module firacode-regular:
+  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom/FiraCode-Regular.otf
+  sha1: 60b37c290638be89d22bc7c3d7a52961a46c2cc5
+curl module firacode-bold:
+  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom/FiraCode-Bold.otf
+  sha1: 214b69d67e9251e7d898d6fbdaaeb9ad376df129
+
+curl module migu-1m:
+  url: https://jaist.dl.osdn.jp/mix-mplus-ipa/72511/migu-1m-20200307.zip
+  unpack: zip
+  export: migu-1m-20200307/
+  pick: migu-1m-20200307/migu-1m-*.ttf
+  sha1: d69fe63677c00af792ff0bed9e77be02b7f6d048
+
+curl module FontAwesome:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/font-awesome/FontAwesome.otf
+  sha1: 048707bc52ac4b6563aaa383bfe8660a0ddc908c
+curl module Pomicons:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/Pomicons.otf
+  sha1: cb03e61059e2c0d4fda84a0118c7817f2055fc88
+curl module PowerlineExtraSymbols:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/PowerlineExtraSymbols.otf
+  sha1: 1bd2f06a7583aa3a676c9d1f4630862114197136
+curl module PowerlineSymbols:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/powerline-symbols/PowerlineSymbols.otf
+  sha1: b5eff3c621132f75195c2cef18ba06d65547646b
+curl module Unicode_IEC_symbol_font:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/Unicode_IEC_symbol_font.otf
+  sha1: ef663ec45b57fa211ced27f0ccd7fed089eaab61
+curl module codicons:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/codicons/codicon.ttf
+  sha1: 35c667dd856431b43b97809b5859eebb33af2f1f
+curl module devicons:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/devicons.ttf
+  sha1: abf7f63015089b975c0f6b7faf615c97a83e7fe2
+curl module font-awesome-extension:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/font-awesome-extension.ttf
+  sha1: 4e888fa031dca690844d6d25006c832735d0dcfa
+curl module font-logos:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/font-logos.ttf
+  sha1: 63946219309a19591ee7c78e9d9dcb68b8941cb6
+curl module materialdesignicons-webfont:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/materialdesignicons-webfont.ttf
+  sha1: aac61a684025ade260c347309a93f84f4ba09d21
+curl module octicons:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/octicons.ttf
+  sha1: 5c5e30601945170e7a7c0aa4de082652dc273502
+curl module original-source:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/original-source.otf
+  sha1: c6d808d8c280062217d5471e1f10921a2dd111fb
+curl module weathericons-regular-webfont:
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/FontPatcher/src/glyphs/weather-icons/weathericons-regular-webfont.ttf
+  sha1: 9916e3dbc3990e3073cf5a2cb4c2e958273b7532

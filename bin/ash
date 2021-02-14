@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -eu
+
+IMAGE=fontforge:20201107-alpine3.15
+
+[ -z "$(docker images -q $IMAGE 2>/dev/null)" ] && docker build -t $IMAGE docker
+
+exec docker run --rm -i -t \
+  -e DK_UID=$(id -u) \
+  -e DK_GID=$(id -g) \
+  -e DK_USER=$(id -un) \
+  -v $PWD:/fontforge \
+  $IMAGE \
+  "$@"
