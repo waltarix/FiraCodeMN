@@ -50,7 +50,7 @@ all: $(FIRACODE_MN) $(FIRACODE_MN_STYLED)
 
 .PHONY: by-docker
 by-docker:
-	@./bin/ash make -j
+	@./bin/bash make -j"$(nproc)"
 
 $(ASSETS): $(ASSETS_DIR) ;
 

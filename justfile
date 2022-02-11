@@ -2,7 +2,7 @@
 	just -l
 
 docker-build:
-	docker build -t fontforge:20201107-alpine3.15 docker
+	docker build -t fontforge:20201107-bullseye-slim docker
 
 test:
 	env PYTHONDONTWRITEBYTECODE=1 poetry run pytest
@@ -19,4 +19,4 @@ peru-sync:
 	poetry run peru sync
 
 generate-patch-set-from-font-patcher:
-	./bin/ash ./misc/patch_set/generate.sh
+	./bin/bash ./misc/patch_set/generate.sh
