@@ -1,10 +1,22 @@
 #!/bin/sh
 
-set -eu
+set -ue
 
-cd ${0%/*}
+cd "${0%/*}"
 
-wget -qO- https://github.com/ryanoasis/nerd-fonts/raw/FontPatcher/font-patcher \
+_wget() {
+  set -- wget "$@"
+
+  if command -v wget >/dev/null; then
+    true
+  elif command -v busybox >/dev/null; then
+    set -- busybox "$@"
+  fi
+
+  "$@"
+}
+
+_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.2.2/font-patcher \
   | rg --pcre2 -No --multiline --multiline-dotall \
     '(?<=^ {8}self\.patch_set = )\[.+?^ {8}\]' \
   | tr "'" '"' \

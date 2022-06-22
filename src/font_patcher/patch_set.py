@@ -22,7 +22,7 @@ def patch_set():
             name='Seti-UI + Custom',
             filename='original-source.otf',
             sym_start=0xE4FA,
-            sym_end=0xE531,
+            sym_end=0xE534,
             src_start=0xE5FA,
             exact=False,
         ),
@@ -141,10 +141,10 @@ def patch_set():
         Patch(
             name='Font Logos (Font Linux)',
             filename='font-logos.ttf',
-            sym_start=0xF100,
-            sym_end=0xF12D,
-            src_start=0xF300,
-            exact=False,
+            sym_start=0xF300,
+            sym_end=0xF32F,
+            src_start=None,
+            exact=True,
         ),
         Patch(
             name='Octicons',

@@ -2,11 +2,11 @@
 
 set -eu
 
-IMAGE=fontforge:20201107-bullseye-slim
+IMAGE=fontforge:20220308-bookworm-slim
 
 [ -z "$(docker images -q $IMAGE 2>/dev/null)" ] && docker build -t $IMAGE docker
 
-exec docker run --rm -i -t \
+exec docker run --rm \
   -e DK_UID="$(id -u)" \
   -e DK_GID="$(id -g)" \
   -e DK_USER="$(id -un)" \
