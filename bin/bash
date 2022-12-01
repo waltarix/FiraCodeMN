@@ -2,7 +2,7 @@
 
 set -eu
 
-IMAGE=fontforge:20220308-bookworm-slim
+IMAGE=fontforge:20230101-bookworm-slim
 
 [ -z "$(docker images -q $IMAGE 2>/dev/null)" ] && docker build -t $IMAGE docker
 

@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from collections import defaultdict
 from functools import lru_cache
 from typing import DefaultDict
@@ -22,7 +20,7 @@ def patch_set():
             name='Seti-UI + Custom',
             filename='original-source.otf',
             sym_start=0xE4FA,
-            sym_end=0xE534,
+            sym_end=0xE5AA,
             src_start=0xE5FA,
             exact=False,
         ),
@@ -124,11 +122,11 @@ def patch_set():
         ),
         Patch(
             name='Material',
-            filename='materialdesignicons-webfont.ttf',
-            sym_start=0xF001,
-            sym_end=0xF847,
-            src_start=0xF500,
-            exact=False,
+            filename='MaterialDesignIconsDesktop.ttf',
+            sym_start=0xF0001,
+            sym_end=0xF1AF0,
+            src_start=None,
+            exact=True,
         ),
         Patch(
             name='Weather Icons',
@@ -139,7 +137,7 @@ def patch_set():
             exact=False,
         ),
         Patch(
-            name='Font Logos (Font Linux)',
+            name='Font Logos',
             filename='font-logos.ttf',
             sym_start=0xF300,
             sym_end=0xF32F,
@@ -160,7 +158,7 @@ def patch_set():
             sym_start=0x2665,
             sym_end=0x2665,
             src_start=None,
-            exact=False,
+            exact=True,
         ),
         Patch(
             name='Octicons',
@@ -168,7 +166,7 @@ def patch_set():
             sym_start=0x26A1,
             sym_end=0x26A1,
             src_start=None,
-            exact=False,
+            exact=True,
         ),
         Patch(
             name='Octicons',

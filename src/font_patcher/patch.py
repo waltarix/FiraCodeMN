@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from dataclasses import dataclass
 from typing import Optional
 
@@ -31,7 +29,7 @@ class Patch:
         return self.name == 'Font Awesome Extension'
 
     def is_fontlogos(self):
-        return self.name == 'Font Logos (Font Linux)'
+        return self.name == 'Font Logos'
 
     def is_powersymbols(self):
         return self.name == 'Power Symbols'

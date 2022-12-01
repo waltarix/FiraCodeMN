@@ -1,6 +1,6 @@
-FROM alpine:3.16.2 AS builder
+FROM alpine:3.17.1 AS builder
 
-ARG EGET_VERSION=1.2.0
+ARG EGET_VERSION=1.3.1
 ARG JQ_VERSION=1.6
 ARG GOSU_VERSION=1.14
 ARG RIPGREP_VERSION=13.0.0
@@ -28,6 +28,7 @@ FROM debian:bookworm-slim
 
 # hadolint ignore=DL3008
 RUN set -uex; \
+	echo 'deb http://deb.debian.org/debian unstable main' > /etc/apt/sources.list; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		busybox \

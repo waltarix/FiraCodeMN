@@ -1,3 +1,5 @@
+select(.Name != "Material legacy")
+|
 "Patch(
       name=\(.Name | @sh),
       filename=\(.Filename | split("/")[-1] | @sh),

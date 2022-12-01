@@ -3,6 +3,4 @@
 
 /build/
 
-/.vim/coc-settings.json
-
 __pycache__

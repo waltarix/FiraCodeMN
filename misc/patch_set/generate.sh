@@ -16,7 +16,7 @@ _wget() {
   "$@"
 }
 
-_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.2.2/font-patcher \
+_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.3.3/font-patcher \
   | rg --pcre2 -No --multiline --multiline-dotall \
     '(?<=^ {8}self\.patch_set = )\[.+?^ {8}\]' \
   | tr "'" '"' \
@@ -26,7 +26,7 @@ _wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.2.2/font-pa
   | sed -E 's/self\.args.[^,]+/true/g' \
   | sed -E 's/SYM_ATTR_[A-Z_]+/null/g' \
   | sed -E 's/[A-Z]+_SCALE_LIST/null/g' \
-  | sed -E 's/0x([0-9A-F]{4})/"0x\1"/ig' \
+  | sed -E 's/0x([0-9A-F]{4,5})/"0x\1"/ig' \
   | sed -E 's/# .+//ig' \
   | sed -E 's/,\s*$//g' \
   | sed '/^\[/d; /\]$/d' \
