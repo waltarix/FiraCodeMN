@@ -16,7 +16,7 @@ _wget() {
   "$@"
 }
 
-_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.3.3/font-patcher \
+_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/font-patcher \
   | rg --pcre2 -No --multiline --multiline-dotall \
     '(?<=^ {8}self\.patch_set = )\[.+?^ {8}\]' \
   | tr "'" '"' \
@@ -30,4 +30,5 @@ _wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v2.3.3/font-pa
   | sed -E 's/# .+//ig' \
   | sed -E 's/,\s*$//g' \
   | sed '/^\[/d; /\]$/d' \
+  | sed 's/box_enabled/true/g' \
   | jq -r -f ./filter.jq

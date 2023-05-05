@@ -1,4 +1,4 @@
-select(.Name != "Material legacy")
+select(.Enabled)
 |
 "Patch(
       name=\(.Name | @sh),
