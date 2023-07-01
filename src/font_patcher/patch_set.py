@@ -196,7 +196,7 @@ def patch_set():
             name='Octicons',
             filename='octicons.ttf',
             sym_start=0xF27C,
-            sym_end=0xF305,
+            sym_end=0xF306,
             src_start=0xF4A9,
             exact=False,
         ),

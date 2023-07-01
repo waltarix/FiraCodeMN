@@ -26,11 +26,11 @@ imports:
   weathericons-regular-webfont: *glyphs_dir
 
 curl module firacode-regular:
-  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom-r3/FiraCode-Regular.otf
-  sha1: a2b197e08b6537237971e04bd422552a7c2fd95f
+  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom-r4/FiraCode-Regular.otf
+  sha1: 1a558d6d0648677a77aa11d247f1d475c3bd88ff
 curl module firacode-bold:
-  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom-r3/FiraCode-Bold.otf
-  sha1: 60f5eeb43a5011f0194cf2dc0051d30f06b24019
+  url: https://github.com/waltarix/FiraCode/releases/download/6.2-custom-r4/FiraCode-Bold.otf
+  sha1: 4ffcbe2a022f747840070e7dda8470d819a6964b
 
 curl module migu-1m:
   url: https://jaist.dl.osdn.jp/mix-mplus-ipa/72511/migu-1m-20200307.zip
@@ -40,47 +40,47 @@ curl module migu-1m:
   sha1: d69fe63677c00af792ff0bed9e77be02b7f6d048
 
 curl module FontAwesome:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/font-awesome/FontAwesome.otf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/font-awesome/FontAwesome.otf
   sha1: 048707bc52ac4b6563aaa383bfe8660a0ddc908c
 curl module MaterialDesignIconsDesktop:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/materialdesign/MaterialDesignIconsDesktop.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/materialdesign/MaterialDesignIconsDesktop.ttf
   sha1: 2042de4ecfc702fc7ab50155066f973239cd29ad
 curl module Pomicons:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/Pomicons.otf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/Pomicons.otf
   sha1: cb03e61059e2c0d4fda84a0118c7817f2055fc88
 curl module PowerlineExtraSymbols:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/PowerlineExtraSymbols.otf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/PowerlineExtraSymbols.otf
   sha1: 1b6bc19c4b719057ee86b5e616da8a7327e2e80e
 curl module PowerlineSymbols:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/powerline-symbols/PowerlineSymbols.otf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/powerline-symbols/PowerlineSymbols.otf
   sha1: b5eff3c621132f75195c2cef18ba06d65547646b
 curl module Unicode_IEC_symbol_font:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/Unicode_IEC_symbol_font.otf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/Unicode_IEC_symbol_font.otf
   sha1: ef663ec45b57fa211ced27f0ccd7fed089eaab61
 curl module codicons:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/codicons/codicon.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/codicons/codicon.ttf
   sha1: 35c667dd856431b43b97809b5859eebb33af2f1f
 curl module devicons:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/devicons.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/devicons.ttf
   sha1: abf7f63015089b975c0f6b7faf615c97a83e7fe2
 curl module extraglyphs:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/extraglyphs.sfd
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/extraglyphs.sfd
   sha1: 7a874de2c0fac1538a8e2e096231f1facd713797
 curl module font-awesome-extension:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/font-awesome-extension.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/font-awesome-extension.ttf
   sha1: 4e888fa031dca690844d6d25006c832735d0dcfa
 curl module font-logos:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/font-logos.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/font-logos.ttf
   sha1: 5124e1caf257e7753e4a6b1e1a74d12366346714
 curl module materialdesignicons-webfont:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/materialdesignicons-webfont.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/materialdesignicons-webfont.ttf
   sha1: aac61a684025ade260c347309a93f84f4ba09d21
 curl module octicons:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/octicons/octicons.ttf
-  sha1: 954bbaa39a0abf72eef65ec7a01b3ef5dd323c55
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/octicons/octicons.ttf
+  sha1: 3fe0b17cdd93c8dc8150df66f2490e8a734df316
 curl module original-source:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/original-source.otf
-  sha1: 5c450296422bf7e8139c5a42b424b4ed064e10dd
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/original-source.otf
+  sha1: 6c09b48eeec0f9d3f9914bb91557ac3a5bab6f7f
 curl module weathericons-regular-webfont:
-  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.0/src/glyphs/weather-icons/weathericons-regular-webfont.ttf
+  url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.0.2/src/glyphs/weather-icons/weathericons-regular-webfont.ttf
   sha1: 9916e3dbc3990e3073cf5a2cb4c2e958273b7532
