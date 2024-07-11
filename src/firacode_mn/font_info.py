@@ -102,3 +102,4 @@ class FiraCodeMNItalic(FiraCodeMN):
             return style.replace('Regular', 'Italic')
         elif self.isbold():
             return style.replace('Bold', 'Bold Italic')
+        raise RuntimeError('unknown style')

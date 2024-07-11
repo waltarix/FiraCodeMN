@@ -1,9 +1,9 @@
-FROM alpine:3.18.2 AS builder
+FROM alpine:3.20.1 AS builder
 
-ARG EGET_VERSION=1.3.3
-ARG JQ_VERSION=1.6
-ARG GOSU_VERSION=1.16
-ARG RIPGREP_VERSION=13.0.0
+ARG EGET_VERSION=1.3.4
+ARG JQ_VERSION=1.7.1
+ARG GOSU_VERSION=1.17
+ARG RIPGREP_VERSION=14.1.0
 
 WORKDIR /work
 
@@ -17,7 +17,7 @@ RUN set -uex; \
 	tar -xvf eget.tar.gz --strip-components=1; \
 	mkdir bin; \
 	eget() { ./eget --to ./bin "$@"; }; \
-	eget --tag jq-${JQ_VERSION} stedolan/jq; \
+	eget --asset linux-amd64 --tag jq-${JQ_VERSION} jqlang/jq; \
 	eget --tag ${GOSU_VERSION} --asset gosu-amd64 tianon/gosu; \
 	eget --tag ${RIPGREP_VERSION} BurntSushi/ripgrep; \
 	upx ./bin/*;
