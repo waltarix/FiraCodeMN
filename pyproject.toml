@@ -1,26 +1,28 @@
-[tool.poetry]
+[project]
 name = "firacode_mn"
 version = "0.1.0"
 description = ""
-authors = ["nobody <nobody@nowhere>"]
+authors = [{ name = "nobody", email = "nobody@nowhere" }]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "peru>=1.3.1",
+  "opentype-feature-freezer>=1.32.2",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.12,<3.13"
-peru = "^1.3.1"
-opentype-feature-freezer = "^1.32.2"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.2.2"
-yapf = "^0.40.2"
-isort = "^5.13.2"
-pytest-mock = "^3.14.0"
-toml = "^0.10.2"
-pyright = "^1.1.371"
-pyyaml = "^6.0.1"
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.2",
+  "yapf>=0.40.2",
+  "isort>=5.13.2",
+  "pytest-mock>=3.14.0",
+  "toml>=0.10.2",
+  "pyright>=1.1.371",
+  "pyyaml>=6.0.1",
+]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
@@ -35,3 +37,14 @@ column_limit = 120
 
 [tool.isort]
 combine_as_imports = true
+
+[dependency-groups]
+dev = [
+    "isort>=6.0.1",
+    "pyright>=1.1.403",
+    "pytest>=8.4.1",
+    "pytest-mock>=3.14.1",
+    "pyyaml>=6.0.2",
+    "toml>=0.10.2",
+    "yapf>=0.43.0",
+]

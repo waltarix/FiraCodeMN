@@ -1,15 +1,15 @@
-POETRY_RUN :=
+UV_RUN :=
 ifeq ($(DK_USER),)
-	POETRY_RUN := poetry run
+	UV_RUN := uv run
 endif
 
 SRC_DIR    := src
 BUILD_DIR  := build
 ASSETS_DIR := $(SRC_DIR)/assets
 
-PYTHON         := PYTHONPATH=$(SRC_DIR) $(POETRY_RUN) python3
-PERU           := $(POETRY_RUN) peru
-PYFTFEATFREEZE := $(POETRY_RUN) pyftfeatfreeze
+PYTHON         := PYTHONPATH=$(SRC_DIR) $(UV_RUN) python3
+PERU           := $(UV_RUN) peru
+PYFTFEATFREEZE := $(UV_RUN) pyftfeatfreeze
 
 MIGU_1M_REGULAR  := $(ASSETS_DIR)/migu-1m-regular.ttf
 MIGU_1M_BOLD     := $(ASSETS_DIR)/migu-1m-bold.ttf

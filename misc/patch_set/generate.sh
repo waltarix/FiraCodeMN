@@ -16,7 +16,7 @@ _wget() {
   "$@"
 }
 
-_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.2.1/font-patcher \
+_wget -qO- https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.4.0/font-patcher \
   | rg --pcre2 -No --multiline --multiline-dotall \
     '(?<=^ {8}self\.patch_set = )\[.+?^ {8}\]' \
   | tr "'" '"' \
