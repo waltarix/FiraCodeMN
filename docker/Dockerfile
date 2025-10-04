@@ -24,7 +24,7 @@ RUN set -uex; \
 
 #################################################################################
 
-FROM debian:bookworm-slim
+FROM debian:trixie
 
 ENV PYTHONDONTWRITEBYTECODE=1
 

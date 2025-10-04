@@ -2,7 +2,7 @@
 	just -l
 
 docker-build:
-	docker build --pull -t fontforge:20230101-bookworm-slim docker
+	docker build --pull -t fontforge:20230101-trixie docker
 
 test:
 	env PYTHONDONTWRITEBYTECODE=1 uv run pytest
