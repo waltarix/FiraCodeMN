@@ -17,8 +17,8 @@ def fontforge_version():
 
 
 def mocked_fontforge():
-    fontforge: Tfontforge = MagicMock()  # type: ignore
-    fontforge.version.return_value = FONTFORGE_VERSION
+    fontforge = MagicMock()
+    fontforge.version = MagicMock(return_value=FONTFORGE_VERSION)
     return fontforge
 
 
